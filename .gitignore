@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# Marimo
+*/__marimo__
+poc/data/raw/HDFS_v1/preprocessed/HDFS.npz
+poc/data/raw/BGL.zip 
+poc/data/raw/HDFS_v1/preprocessed/Event_occurrence_matrix.csv
+poc/data/raw/HDFS_v1/HDFS.log
+poc/data/raw/HDFS_v1.zip
+poc/data/raw/HDFS_v1/preprocessed/Event_traces.csv
+poc/data/raw/BGL/BGL.log
+poc/data/raw/HDFS_v1/preprocessed/HDFS.log_templates.csv
+poc/data/raw/HDFS_v1/preprocessed/anomaly_label.csv

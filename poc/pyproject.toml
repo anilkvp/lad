@@ -1,0 +1,37 @@
+[project]
+name = "lad"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "coldstone", email = "anilk.vp@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+  "anthropic>=1.12.1",
+  "drain3>=0.9.11",
+  "duckdb>=1.5.6",
+  "dvc>=3.67.1",
+  "lightgbm>=4.7.0",
+  "marimo>=0.25.1",
+  "mlflow>=2.12.2",
+  "optuna>=5.0.0",
+  "polars>=2.0.0",
+  "pyarrow>=15.0.2",
+  "scikit-learn>=1.9.1",
+  "sentence-transformers>=6.1.0",
+  "torch>=2.14.1",
+]
+
+[project.scripts]
+lad = "lad:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
